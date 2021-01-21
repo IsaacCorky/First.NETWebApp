@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <!-- Styles -->
+    <link href="/css/styles.css" rel="stylesheet" />
+    <!-- FavIcon -->
+    <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAALrUAADM6AAAwNsAANr3AGNj/wAI3vsAANPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIgAAAAAid3dyIAAAAidBEXdyAAACdBMzFHcgAAJ3EzMWRyAAACERERFHIAAAJ0ZmZkcgAAZmZmAAByAFVmZmYAAAIAVWYGZgAAAAAAZmZmAAAAAAAGZmAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAPgPAADwBwAA4AMAAOABAADgAQAA8AEAAPABAADgeQAAgH0AAIB/AADgfwAA8P8AAP//AAD//wAA" rel="icon" type="image/x-icon" />
+    <title>Meet Isaac Corcoran</title>
+    <!-- 
+     Isaac Corcoran -- 01/20/2021
+     
+     Build an ASP.NET Web App using the same structure as in the "Building First Web App"
+    series of videos. (i.e. Non-MVC)
+
+    Include:
+
+    Title
+    Header that lists your preferred name
+    A picture of yourself doing something you enjoy
+    A paragraph on what you hope to get out of this IS 413 class
+    A list of the Top #3 jobs you are most interested in pursuing when you graduate
+    A "Grade Calculator" form that takes as input a percentage of each grade category listed in the syllabus
+    An icon for the website (displayed on the tab next to the title) (#notcoveredinthevideos)
+
+    Style the site using a CSS file.  Level of styling is up to you, but only CSS for now.  (No Bootstrap, Angular, etc. on this assignment. We'll get there!)
+
+    Build a JavaScript program that calculates and displays both a final percentage and a letter grade using the "Grade Calculator" form entries based on the weights listed in the syllabus.
+
+    As always, write good code (use indentation, commenting, whitespace, descriptive variable names, etc.)
+
+    Submit a link to the GitHub Repository containing your project. (NOTE:  Make sure the repository is Public so the TAs can access it.)
+
+     -->
+</head>
+<body>
+    <div class="content">
+        <h1>I'm Isaac Corcoran</h1>
+
+        <p>I like to spend time in beautiful places. Here is me on Bear Lake, Utah.</p>
+
+        <img src="img/outdoor-me.png" />
+
+        <p>
+            I hope to get a lot out of IS 413. Primarily I want to learn how to program impressive web apps that are robust and secure.
+            On top of that it would be nice to develop lasting relationships with Dr. Hilton and my peers too.
+        </p>
+        <br />
+
+        <p>My Top 3 Jobs:</p>
+
+        <ul>
+            <li>Product Manager @ Atlassian</li>
+            <li>Data Scientist @ Nike</li>
+            <li>Python/C# Developer @ Microsoft</li>
+        </ul>
+        <br />
+
+        <h2 id="calctitle">Grade Calculator:</h2>
+
+        <h3 id="output"></h3>
+
+        <form id="form" action="#" method="get" onsubmit="return false">
+            <p>Input your grade percentages according to syllabus below.</p>
+
+            <label>Assignments</label><br />
+            <input type="number" value="0" id="assignment" />
+            <br /><br />
+
+            <label>Group Project</label><br />
+            <input type="number" value="0" id="group" />
+            <br /><br />
+
+            <label>Quizzes</label><br />
+            <input type="number" value="0" id="quiz" />
+            <br /><br />
+
+            <label>Exams</label><br />
+            <input type="number" value="0" id="exam" />
+            <br /><br />
+
+            <label>INTEX</label><br />
+            <input type="number" value="0" id="intex" /><br />
+
+            <input type="submit" value="Calculate" id="calculateButton" />
+        </form><br /><br />
+    </div>
+    <!-- JS -->
+    <script src="/js/main.js"></script>
+</body>
+</html>

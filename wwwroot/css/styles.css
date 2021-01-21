@@ -1,0 +1,43 @@
+﻿/* Isaac Corcoran
+   Style the site using a CSS file.  
+   Level of styling is up to you, but only CSS for now.  
+   (No Bootstrap, Angular, etc. on this assignment. We'll get there!) 
+*/
+
+.content {
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #333;
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    color: darkblue;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+ul li {
+    list-style-type: upper-roman;
+}
+
+h2 {
+    color: darkblue;
+}
+
+img {
+    width: 60%;
+    height: auto;
+}
+
+#calculateButton {
+    margin: 2rem 0 0 0;
+}
